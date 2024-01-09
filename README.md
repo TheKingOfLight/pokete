@@ -1,4 +1,4 @@
-Some custimasations to the original pokete: ![Pokete](https://github.com/lxgr-linux/pokete)
+This repo contains some custimasations to the original pokete: ![Pokete](https://github.com/lxgr-linux/pokete)
 
 # Pokete -- Grey Edition
 
