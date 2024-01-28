@@ -11,7 +11,6 @@ Pokete is a small terminal based game in the style of a very popular and old gam
 ## Installation
 For Linux, BSD etc. just do this:
 ```shell
-# pip install scrap_engine
 $ git clone https://github.com/lxgr-linux/pokete.git
 $ ./pokete/pokete.py
 ```
