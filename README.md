@@ -26,7 +26,6 @@ NOTE: In that case you first have to create the `~/.cache/pokete/` folder.
 
 For OSX:
 ```shell
-# pip install scrap_engine
 $ git clone https://github.com/lxgr-linux/pokete.git
 $ ./pokete/pokete.py
 ```
@@ -37,7 +36,6 @@ Some windows antivirus may flag the `libplaysound.dll` as malicious. If pokete c
 
 ```shell
 git clone https://github.com/lxgr-linux/pokete.git
-pip install scrap_engine
 ```
 To run just execute `pokete.py`.
 
