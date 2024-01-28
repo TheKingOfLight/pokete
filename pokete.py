@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """This software is licensed under the GPL3
-You should have gotten an copy of the GPL3 license anlonside this software
+You should have gotten a copy of the GPL3 license anlonside this software
 Feel free to contribute what ever you want to this game
 New Pokete contributions are especially welcome
 For this see the comments in the definations area
