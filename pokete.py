@@ -327,7 +327,7 @@ class CenterInteract(se.Object):
 
 
 class ShopInteract(se.Object):
-    """Triggers an conversation in the shop"""
+    """Triggers a conversation in the shop"""
 
     def action(self, ob):
         """Triggers an interaction in the shop
