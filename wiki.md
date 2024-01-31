@@ -30,6 +30,7 @@ You can find different versions of this wiki:
        7. [Vogli](#vogli)
        8. [Voglo](#voglo)
        9. [Voglus](#voglus)
+       10. [whitecotten](#whitecotten)
    4. [Ground Poketes](#ground-poketes)
        1. [Corcos day](#corcos-day)
        2. [Corcos night](#corcos-night)
@@ -46,8 +47,9 @@ You can find different versions of this wiki:
        1. [Hornita](#hornita)
        2. [Horny](#horny)
        3. [Mowcow](#mowcow)
-       4. [Ratatat](#ratatat)
-       5. [Rato](#rato)
+       4. [rabbitto](#rabbitto)
+       5. [Ratatat](#ratatat)
+       6. [Rato](#rato)
    7. [Plant Poketes](#plant-poketes)
        1. [Bushy](#bushy)
        2. [Megapois](#megapois)
@@ -81,12 +83,14 @@ You can find different versions of this wiki:
        3. [Crabbat](#crabbat)
        4. [Karpi](#karpi)
        5. [Kartmen](#kartmen)
-       6. [Rustacean](#rustacean)
+       6. [pangsuni](#pangsuni)
+       7. [Rustacean](#rustacean)
 2. [Attacks](#attacks)
    1. [Electro attacks](#electro-attacks)
-       1. [Charging](#charging)
-       2. [Mega Arch](#mega-arch)
-       3. [Shock](#shock)
+       1. [10billon_Volt](#10billon_volt)
+       2. [Charging](#charging)
+       3. [Mega Arch](#mega-arch)
+       4. [Shock](#shock)
    2. [Fire attacks](#fire-attacks)
        1. [Ash Throw](#ash-throw)
        2. [Fire Ball](#fire-ball)
@@ -118,13 +122,15 @@ You can find different versions of this wiki:
        1. [Bite](#bite)
        2. [Choker](#choker)
        3. [Cry](#cry)
-       4. [Meat Skewer](#meat-skewer)
-       5. [Power Bite](#power-bite)
-       6. [Snooze](#snooze)
-       7. [Supercow Power](#supercow-power)
-       8. [Tackle](#tackle)
-       9. [Tail Swipe](#tail-swipe)
-       10. [Web attack](#web-attack)
+       4. [Cutearrow](#cutearrow)
+       5. [Heartattack](#heartattack)
+       6. [Meat Skewer](#meat-skewer)
+       7. [Power Bite](#power-bite)
+       8. [Snooze](#snooze)
+       9. [Supercow Power](#supercow-power)
+       10. [Tackle](#tackle)
+       11. [Tail Swipe](#tail-swipe)
+       12. [Web attack](#web-attack)
    7. [Plant attacks](#plant-attacks)
        1. [Apple Drop](#apple-drop)
        2. [Bark Hardening](#bark-hardening)
@@ -159,9 +165,11 @@ You can find different versions of this wiki:
        1. [Bubble Bomb](#bubble-bomb)
        2. [Bubble Gun](#bubble-gun)
        3. [Bubble Shield](#bubble-shield)
-       4. [Rain dance](#rain-dance)
-       5. [Shell Pinch](#shell-pinch)
-       6. [Wet Slap](#wet-slap)
+       4. [Downpour](#downpour)
+       5. [Rain dance](#rain-dance)
+       6. [Shell Pinch](#shell-pinch)
+       7. [Water_blast](#water_blast)
+       8. [Wet Slap](#wet-slap)
 3. [Types](#types)
 4. [Items](#items)
    1. [AP potion](#ap-potion)
@@ -477,7 +485,6 @@ A nocturnal Pokete that is looking for small children to eat as a midnight snack
    + Abandoned Village
    + Route 3
    + Route 4
-   + Deepest Forest
    + Route 5
    + Route 6
 - Does not evolve
@@ -537,7 +544,6 @@ A very common bird Pokete; it lives everywhere.
 - Can be found in:
    + Nice Town
    + Route 4
-   + Deepest Forest
 - Evolves to [Voglo](#voglo) at level 20
 
 #### Voglo
@@ -572,7 +578,6 @@ A very aggressive bird Pokete that can only be found in the woods.
    + Route 2
    + Route 3
    + Route 4
-   + Deepest Forest
    + Route 5
    + Route 6
    + Mowcow Meadow
@@ -607,6 +612,35 @@ A very aggressive and hard to find bird Pokete.
 - Active: Always
 - Can be found in:
    + Nowhere
+- Does not evolve
+
+
+#### whitecotten
+It is pokemon made of a lot of small clouds
+
+```
+╭ ⁀ ⁀  ╮   
+(' ● '  )  
+╰ ‿ ‿ ╯    
+           
+
+```
+
+- Type: [Flying](#types)
+- Health points: 30
+- Attack factor: 10
+- Defense factor: 2
+- Initiative: 5
+- Missing chance: 0
+- Rarity: 1
+- Loosing experience: 3
+- Attacks:
+   + [Tackle](#tackle)
+   + [10billon_Volt](#10billon_volt)
+   + [Downpour](#downpour)
+- Active: Always
+- Can be found in:
+   + Deepest Forest
 - Does not evolve
 
 ### Ground Poketes
@@ -983,6 +1017,36 @@ A cow-like creature found in meadows.
 - Does not evolve
 
 
+#### rabbitto
+A very cute rabbit pokemon.
+
+```
+(\ /)      
+    (´•ᴥ•`)
+  ♥~૮()૮ )O
+           
+
+```
+
+- Type: [Normal](#types)
+- Health points: 30
+- Attack factor: 3
+- Defense factor: 2
+- Initiative: 5
+- Missing chance: 0
+- Rarity: 1
+- Loosing experience: 3
+- Attacks:
+   + [Tackle](#tackle)
+   + [Heartattack](#heartattack)
+   + [Cutearrow](#cutearrow)
+- Active: Always
+- Can be found in:
+   + Route 1
+   + Deepest Forest
+- Does not evolve
+
+
 #### Ratatat
 A damn dangerous and enourmous rat; it will bite of your leg.
 
@@ -1038,12 +1102,10 @@ An annoying rat.
 - Can be found in:
    + Nice Town
    + Nice Town Cave
-   + Route 1
    + Sunnydale
    + Sunnydale Lake
    + Abandoned House
    + Route 4
-   + Deepest Forest
    + Big Mountain Sea
 - Evolves to [Ratatat](#ratatat) at level 25
 ### Plant Poketes
@@ -1844,7 +1906,6 @@ A harmless water Pokete that can be found everywhere.
    + [Tackle](#tackle)
 - Active: Always
 - Can be found in:
-   + Sunnydale Lake
    + Route 3
    + Big Mountain Sea
    + Rock-ville
@@ -1877,6 +1938,35 @@ A freshwater fighting fish Pokete.
 - Active: Always
 - Can be found in:
    + Nowhere
+- Does not evolve
+
+
+#### pangsuni
+A Penguin pokes can be found in very cold place.
+
+```
+-=(◕ )     
+    '.-.\  
+   /|   |\ 
+    _\_):_ 
+
+```
+
+- Type: [Water](#types)
+- Health points: 30
+- Attack factor: 10
+- Defense factor: 2
+- Initiative: 5
+- Missing chance: 0
+- Rarity: 1
+- Loosing experience: 3
+- Attacks:
+   + [Tackle](#tackle)
+   + [Water_blast](#water_blast)
+- Active: Always
+- Can be found in:
+   + Sunnydale Lake
+   + Deepest Forest
 - Does not evolve
 
 
@@ -1942,6 +2032,16 @@ Gives the enemy a massive shock.
 - Attack factor: 5
 - Missing chance: 0.2
 - Attack points: 10
+- Effect: [Paralyzation](#paralyzation)
+
+#### 10billon_Volt
+attack with very strong thunder power
+
+- Type: [Electro](#types)
+- Minimum Level: 0
+- Attack factor: 5
+- Missing chance: 0
+- Attack points: 15
 - Effect: [Paralyzation](#paralyzation)
 
 ### Fire attacks
@@ -2265,6 +2365,26 @@ Makes the Pokete angry and strong.
 - Type: [Normal](#types)
 - Minimum Level: 10
 - Attack factor: 0
+- Missing chance: 0
+- Attack points: 10
+- Effect: None
+
+#### Heartattack
+A cute pokete breaks enemy heart.
+
+- Type: [Normal](#types)
+- Minimum Level: 0
+- Attack factor: 3
+- Missing chance: 0
+- Attack points: 30
+- Effect: [Confusion](#confusion)
+
+#### Cutearrow
+A cute pokete aiming with arrow to enemy heart.
+
+- Type: [Normal](#types)
+- Minimum Level: 0
+- Attack factor: 10
 - Missing chance: 0
 - Attack points: 10
 - Effect: None
@@ -2602,6 +2722,26 @@ Pinches the enemy with its strong shell.
 - Attack factor: 2.5
 - Missing chance: 0.1
 - Attack points: 20
+- Effect: None
+
+#### Downpour
+make heavy rain to attack enemy
+
+- Type: [Water](#types)
+- Minimum Level: 0
+- Attack factor: 0.75
+- Missing chance: 0
+- Attack points: 30
+- Effect: None
+
+#### Water_blast
+A shooting water blast to enemy.
+
+- Type: [Water](#types)
+- Minimum Level: 0
+- Attack factor: 3
+- Missing chance: 0.1
+- Attack points: 10
 - Effect: None
 
 ## Types

@@ -64,11 +64,9 @@ pokes = {
         "evolve_lvl": 30,
         "initiative": 5,
         "ico": [{
-            "txt": r"""
-     (\ /)
+            "txt": r"""(\ /)
     (´•ᴥ•`)
-  ♥~૮()૮  )O
-            """,
+  ♥~૮()૮ )O """,
             "esc": None}],
 
     },
@@ -88,11 +86,9 @@ pokes = {
         "evolve_lvl": 30,
         "initiative": 5,
         "ico": [{
-            "txt": r"""
-╭ ⁀ ⁀  ╮
+            "txt": r"""╭ ⁀ ⁀  ╮
 (' ● '  )
-╰ ‿ ‿ ╯
-            """,
+╰ ‿ ‿ ╯""",
             "esc": None}],
 
     },
@@ -112,8 +108,7 @@ pokes = {
         "evolve_lvl": 30,
         "initiative": 5,
         "ico": [{
-            "txt": r"""
-  -=(◕ )
+            "txt": r"""-=(◕ )
     '.-.\
    /|   |\
     _\_):_""",
