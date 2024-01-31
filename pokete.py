@@ -39,7 +39,7 @@ from pokete_classes.pokete_care import PoketeCare, DummyFigure
 from pokete_classes import deck, detail, game, timer, ob_maps as obmp, \
     movemap as mvp, fightmap as fm
 # import pokete_classes.generic_map_handler as gmh
-from pokete_classes.landscape import Meadow, Water, Sand, HighGrass, Poketeball
+from pokete_classes.landscape import Meadow, Water, Sand, HighGrass, Poketeball, HIGHGRASS_WEIGHT
 from pokete_classes.doors import (
     CenterDoor, Door, DoorToCenter, DoorToShop, ChanceDoor
 )
@@ -1104,6 +1104,7 @@ def _game(_map):
     while True:
         # Directions are not being used yet
         action = get_action()
+        figure.fightWeight = HIGHGRASS_WEIGHT
         if action.triggers(*ACTION_DIRECTIONS):
             figure.npc = None
             figure.direction = ''
