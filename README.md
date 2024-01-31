@@ -1,4 +1,5 @@
 This repo contains some custimasations to the original pokete: ![Pokete](https://github.com/lxgr-linux/pokete)
+For changes see bottom:
 
 # Pokete -- Grey Edition
 
@@ -144,6 +145,28 @@ Music:
 - Eric Skiff - Resistor Anthems - Available at [http://EricSkiff.com/music](http://EricSkiff.com/music)
 - Marllon Silva (xDeviruchi) - 8-bit-fantasy-adventure-music-pack - Available at [itch.io](https://xdeviruchi.itch.io/8-bit-fantasy-adventure-music-pack)
 - SketchyLogic - Map - Available at [opengameart.org](https://opengameart.org/content/nes-shooter-music-5-tracks-3-jingles)
+- lxgr-linux - Original game - Available at [pokete](https://github.com/lxgr-linux/pokete)
 
 ## Troubleshooting
 If you're experiencing problems on Japanese systems take a look at [this](https://gist.github.com/z80oolong/c7523367b798bdda094f859342f4c8be).
+
+
+## Changes to lxgr-linux original game
+- Merged Pull request [#255](https://github.com/lxgr-linux/pokete/pull/255) by ta-mj
+  - Skip animation when pressing 'Accept' key
+  - Added an archivment ("first Gym Win")
+  - Added Attacks
+    - heartattack
+    - cutearrow
+    - 10billon_volt"
+    - downpour
+    - water_blast
+  - Added Poketes
+    - rabbitto
+    - whitecotten
+    - pangsuni
+  - Balancing
+    - More xp when fighting higher lv. poketes
+    - adjusted some probabillity values
+    - Increased pokete HP by 1 every 10 lv.
+  - Minor spelling improvement
