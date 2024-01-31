@@ -55,7 +55,7 @@ class Poke:
         self.defense = 0
         self.initiative = 0
         #Hp increases by 1 each 10 level of the Pokemon
-        self.hp = round((int(self.lvl() * 1.1) + self.inf["hp"]))
+        self.hp = round((int(self.lvl() * 0.1) + self.inf["hp"]))
         self.name = self.inf["name"]
         self.miss_chance = self.inf["miss_chance"]
         self.lose_xp = self.inf["lose_xp"]
@@ -140,10 +140,10 @@ can't have more than 4 attacks!"
             setattr(self, name, round((self.lvl() + self.inf[name]
                     + (2 if self.shiny else 0)) * self.nature.get_value(name)))
         #when poketes level up increase hp
-        if(self.full_hp < round(self.inf["hp"] + int(self.lvl() * 1.1))):
+        if(self.full_hp < round(self.inf["hp"] + int(self.lvl() * 0.1))):
             self.hp += 1
             self.text_hp.rechar(f"HP:{self.hp}")
-        self.full_hp = round(self.inf["hp"] + int(self.lvl() * 1.1))
+        self.full_hp = round(self.inf["hp"] + int(self.lvl() * 0.1))
         for atc in self.attack_obs:
             atc.set_ap(atc.max_ap)
 

@@ -12,7 +12,7 @@ from .poke import Poke
 from .input import ask_ok
 
 
-HIGHGRASS_WEIGHT = 300
+HIGHGRASS_WEIGHT = 30
 
 class HighGrass(se.Object):
     """Object on the map, that triggers a fight"""
