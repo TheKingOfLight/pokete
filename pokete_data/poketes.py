@@ -48,6 +48,78 @@ pokes = {
  +-------+ """,
             "esc": None}],
     },
+    "rabbitto": {
+        "name": "rabbitto",
+        "hp": 30,
+        "atc": 3,
+        "defense": 2,
+        "attacks": ["tackle", "heartattack", "cutearrow"],
+        "pool": [],
+        "miss_chance": 0,
+        "desc": "A very cute rabbit pokemon.",
+        "lose_xp": 3,
+        "rarity": 1,
+        "types": ["normal"],
+        "evolve_poke": "",
+        "evolve_lvl": 30,
+        "initiative": 5,
+        "ico": [{
+            "txt": r"""
+     (\ /)
+    (´•ᴥ•`)
+  ♥~૮()૮  )O
+            """,
+            "esc": None}],
+
+    },
+    "whitecotten": {
+        "name": "whitecotten",
+        "hp": 30,
+        "atc": 10,
+        "defense": 2,
+        "attacks": ["tackle", "10billon_volt", "downpour"],
+        "pool": [],
+        "miss_chance": 0,
+        "desc": "It is pokemon made of a lot of small clouds",
+        "lose_xp": 3,
+        "rarity": 1,
+        "types": ["flying", "electro"],
+        "evolve_poke": "",
+        "evolve_lvl": 30,
+        "initiative": 5,
+        "ico": [{
+            "txt": r"""
+╭ ⁀ ⁀  ╮
+(' ● '  )
+╰ ‿ ‿ ╯
+            """,
+            "esc": None}],
+
+    },
+    "pangsuni": {
+        "name": "pangsuni",
+        "hp": 30,
+        "atc": 10,
+        "defense": 2,
+        "attacks": ["tackle", "water_blast"],
+        "pool": [],
+        "miss_chance": 0,
+        "desc": "A Penguin pokes can be found in very cold place.",
+        "lose_xp": 3,
+        "rarity": 1,
+        "types": ["water", "normal"],
+        "evolve_poke": "",
+        "evolve_lvl": 30,
+        "initiative": 5,
+        "ico": [{
+            "txt": r"""
+  -=(◕ )
+    '.-.\
+   /|   |\
+    _\_):_""",
+            "esc": None}],
+
+    },
     "mowcow": {
         "name": "Mowcow",
         "hp": 20,
