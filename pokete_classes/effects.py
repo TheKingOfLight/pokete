@@ -130,17 +130,14 @@ class Effect:
 
     def effect(self):
         """The action that's executed every attack round"""
-        if random.randint(0, 1) == 0:
-            self.obj.ico.map.outp.outp(f'{self.obj.ext_name} is still ')
-            self.obj.ico.map.outp.append(se.Text(self.name,
-                                                esccode=self.str_esccode,
-                                                state="float"),
-                                        se.Text(" and can\'t attack!",
-                                                state="float"))
-            time.sleep(SPEED_OF_TIME * 0.5)
-            return 1
-        else:
-            return 0
+        self.obj.ico.map.outp.outp(f'{self.obj.ext_name} is still ')
+        self.obj.ico.map.outp.append(se.Text(self.name,
+                                            esccode=self.str_esccode,
+                                            state="float"),
+                                    se.Text(" and can\'t attack!",
+                                            state="float"))
+        time.sleep(SPEED_OF_TIME * 0.5)
+        return 1
 
     @classmethod
     def ret_md(cls):
@@ -159,8 +156,21 @@ This is reverted randomly."
     color = Color.thicc + Color.yellow
 
     def __init__(self, obj=None):
-        super().__init__("paralyzed", 6, 2, "(Par)", self.color,
+        super().__init__("paralyzed", 4, 2, "(Par)", self.color,
                          obj)
+
+    def effect(self):
+        if random.randint(0, 8) == 0:
+            self.obj.ico.map.outp.outp(f'{self.obj.ext_name} is still ')
+            self.obj.ico.map.outp.append(se.Text(self.name,
+                                                esccode=self.str_esccode,
+                                                state="float"),
+                                            se.Text(" and can\'t attack!",
+                                                state="float"))
+            time.sleep(SPEED_OF_TIME * 0.5)
+            return 1
+        else:
+            return 0
 
 
 class EffectSleep(Effect):
@@ -171,18 +181,7 @@ This is reverted randomly."
     color = Color.white
 
     def __init__(self, obj=None):
-        super().__init__("sleeping", 8, 3, "(Sle)", self.color, obj)
-
-    def effect(self):
-        """The action that's executed every attack round"""
-        self.obj.ico.map.outp.outp(f'{self.obj.ext_name} is still ')
-        self.obj.ico.map.outp.append(se.Text(self.name,
-                                             esccode=self.str_esccode,
-                                             state="float"),
-                                     se.Text(" and can\'t attack!",
-                                             state="float"))
-        time.sleep(SPEED_OF_TIME * 0.5)
-        return 1
+        super().__init__("sleeping", 5, 3, "(Sle)", self.color, obj)
 
 
 class EffectBurning(Effect):
@@ -193,7 +192,7 @@ This is reverted randomly."
     color = Color.thicc + Color.red
 
     def __init__(self, obj=None):
-        super().__init__("burning", 6, 0, "(Bur)", self.color, obj,
+        super().__init__("burning", 4, 0, "(Bur)", self.color, obj,
                          exclude=["fire", "water"])
         self.hurt_text = "burned it self!"
         self.damage = 2
@@ -223,7 +222,7 @@ class EffectPoison(EffectBurning):
     color = Color.purple
 
     def __init__(self, obj=None):
-        super(EffectBurning, self).__init__("poisoned", 8, 2, "(Poi)", self.color
+        super(EffectBurning, self).__init__("poisoned", 5, 2, "(Poi)", self.color
                                             , obj)
         self.hurt_text = "got damaged through poison!"
         self.damage = 1
@@ -236,17 +235,21 @@ class EffectConfusion(Effect):
     color = Color.lightblue
 
     def __init__(self, obj=None):
-        super().__init__("confused", 6, 2, "(Con)", self.color, obj,
+        super().__init__("confused", 4, 2, "(Con)", self.color, obj,
                          exclude=["undead"])
 
     def effect(self):
-        self.obj.ico.map.outp.outp(f'{self.obj.ext_name} is still ')
-        self.obj.ico.map.outp.append(se.Text(self.name,
-                                             esccode=self.str_esccode,
-                                             state="float"),
-                                     se.Text("!", state="float"))
-        time.sleep(SPEED_OF_TIME * 0.5)
-        return 0
+        if random.randint(0, 8) == 0:
+            self.obj.ico.map.outp.outp(f'{self.obj.ext_name} is still ')
+            self.obj.ico.map.outp.append(se.Text(self.name,
+                                                esccode=self.str_esccode,
+                                                state="float"),
+                                            se.Text(" and can\'t attack!",
+                                                state="float"))
+            time.sleep(SPEED_OF_TIME * 0.5)
+            return 1
+        else:
+            return 0
 
 
 class EffectFreezing(Effect):
@@ -257,7 +260,7 @@ This is reverted randomly."
     color = Color.cyan
 
     def __init__(self, obj=None):
-        super().__init__("frozen", 6, 3, "(Fro)", self.color, obj,
+        super().__init__("frozen", 4, 3, "(Fro)", self.color, obj,
                          exclude=["ice", "fire"])
 
 
