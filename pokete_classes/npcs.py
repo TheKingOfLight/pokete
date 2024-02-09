@@ -15,6 +15,7 @@ from .inv_items import invitems
 from .settings import settings
 from .ui_elements import ChooseBox
 from .general import check_walk_back
+from .achievements import achievements
 
 
 class NPCTrigger(se.Object):
@@ -97,6 +98,7 @@ class NPC(se.Box):
         self.exclamate()
         self.text(self.texts)
         self.func()
+
 
     def func(self):
         """The function that's executed after the interaction"""
@@ -284,6 +286,10 @@ class Trainer(NPC, Provider):
                 else:
                     self.fig.add_money(20)
                     self.set_used()
+                    #add first gym win acheivement when you win Last Trainer in playmap_14
+                    if self.name == "Master of the Flowers":
+                        achievements.achieve("first Gym Win")
+
                 logging.info("[NPC][%s] %s against player", self.name,
                              'Lost' if not is_winner else 'Won')
             self.walk_point(o_x, o_y + (1 if o_y > self.y else -1))

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """This software is licensed under the GPL3
-You should have gotten an copy of the GPL3 license anlonside this software
+You should have gotten a copy of the GPL3 license anlonside this software
 Feel free to contribute what ever you want to this game
 New Pokete contributions are especially welcome
 For this see the comments in the definations area
@@ -39,7 +39,7 @@ from pokete_classes.pokete_care import PoketeCare, DummyFigure
 from pokete_classes import deck, detail, game, timer, ob_maps as obmp, \
     movemap as mvp, fightmap as fm
 # import pokete_classes.generic_map_handler as gmh
-from pokete_classes.landscape import Meadow, Water, Sand, HighGrass, Poketeball
+from pokete_classes.landscape import Meadow, Water, Sand, HighGrass, Poketeball, HIGHGRASS_WEIGHT
 from pokete_classes.doors import (
     CenterDoor, Door, DoorToCenter, DoorToShop, ChanceDoor
 )
@@ -327,7 +327,7 @@ class CenterInteract(se.Object):
 
 
 class ShopInteract(se.Object):
-    """Triggers an conversation in the shop"""
+    """Triggers a conversation in the shop"""
 
     def action(self, ob):
         """Triggers an interaction in the shop
@@ -1104,12 +1104,16 @@ def _game(_map):
     while True:
         # Directions are not being used yet
         action = get_action()
+        figure.fightWeight = HIGHGRASS_WEIGHT
         if action.triggers(*ACTION_DIRECTIONS):
+            figure.npc = None
             figure.direction = ''
             figure.set(
                 figure.x + action.get_x_strength(),
                 figure.y + action.get_y_strength()
             )
+        elif action.triggers(Action.ACCEPT) and figure.npc != None:
+            figure.npc.reaction()
         elif action.triggers(*inp_dict):
             for key, option in inp_dict.items():
                 if action.triggers(key):
@@ -1158,6 +1162,7 @@ def intro():
             "Welcome to Pokete!\nPlease choose your name!\n",
             "Name:", "", "Name", 17, mvp.movemap
         )
+    figure.char = figure.name[0]
     mvp.movemap.name_label_rechar(figure.name)
     mvp.movemap.text(4, 3, ["Hello, my child.",
                             "You're now ten years old.",

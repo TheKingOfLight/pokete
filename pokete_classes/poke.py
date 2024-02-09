@@ -54,7 +54,8 @@ class Poke:
         self.atc = 0
         self.defense = 0
         self.initiative = 0
-        self.hp = self.inf["hp"]
+        #Hp increases by 1 each 10 level of the Pokemon
+        self.hp = round((int(self.lvl() * 0.1) + self.inf["hp"]))
         self.name = self.inf["name"]
         self.miss_chance = self.inf["miss_chance"]
         self.lose_xp = self.inf["lose_xp"]
@@ -138,6 +139,11 @@ can't have more than 4 attacks!"
         for name in ["atc", "defense", "initiative"]:
             setattr(self, name, round((self.lvl() + self.inf[name]
                     + (2 if self.shiny else 0)) * self.nature.get_value(name)))
+        #when poketes level up increase hp
+        if(self.full_hp < round(self.inf["hp"] + int(self.lvl() * 0.1))):
+            self.hp += 1
+            self.text_hp.rechar(f"HP:{self.hp}")
+        self.full_hp = round(self.inf["hp"] + int(self.lvl() * 0.1))
         for atc in self.attack_obs:
             atc.set_ap(atc.max_ap)
 
@@ -171,7 +177,9 @@ can't have more than 4 attacks!"
         self.text_xp.rechar(f"XP:{self.xp - (self.lvl() ** 2 - 1)}/\
 {((self.lvl() + 1) ** 2 - 1) - (self.lvl() ** 2 - 1)}")
         self.text_lvl.rechar(f"Lvl:{self.lvl()}")
-        logging.info("[Poke][%s] Gained %dxp (curr:%d)", self.name, _xp, self.xp)
+        self.text_hp.rechar(f"HP:{self.oldhp}")
+        logging.info("[Poke][%s] Gained %dxp (curr:%d)",
+                     self.name, _xp, self.xp)
         if old_lvl < self.lvl():
             logging.info("[Poke][%s] Reached lvl. %d", self.name, self.lvl())
             return True
@@ -210,7 +218,7 @@ can't have more than 4 attacks!"
                 time.sleep(SPEED_OF_TIME * 1.5)
             enem.oldhp = enem.hp
             self.oldhp = self.hp
-            eff = (1.3 if enem.type.name in attack.type.effective else 0.5
+            eff = (1.8 if enem.type.name in attack.type.effective else 0.5
                    if enem.type.name in attack.type.ineffective else 1) * w_eff
             n_hp = round((self.atc
                           * attack.factor
